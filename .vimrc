@@ -1,4 +1,10 @@
 syntax on
+set t_Co=256
+set background=dark
+colorscheme iceberg
+highlight Normal ctermbg=NONE
+highlight nonText ctermbg=NONE
+
 filetype plugin indent on
 set nocompatible
 set autoindent
@@ -21,6 +27,7 @@ set wildmenu
 set encoding=utf-8
 set fileencodings=utf-8,iso-2022-jp,euc-jp,sjis
 
+
 if has('vim_starting')
    " 初回起動時のみruntimepathにneobundleのパスを指定する
    set runtimepath+=~/.vim/bundle/neobundle.vim/
@@ -41,7 +48,3 @@ call neobundle#end()
 
 " ファイルタイプ別のプラグイン/インデントを有効にする
 filetype plugin indent on
-
-syntax enable
-set background=dark
-colorscheme iceberg
