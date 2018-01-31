@@ -26,7 +26,7 @@ set backspace=indent,eol,start
 set wildmenu
 set encoding=utf-8
 set fileencodings=utf-8,iso-2022-jp,euc-jp,sjis
-
+set clipboard+=unnamed
 
 if has('vim_starting')
    " 初回起動時のみruntimepathにneobundleのパスを指定する
